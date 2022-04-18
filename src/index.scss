@@ -1,0 +1,22 @@
+$c-bg0: #203239;
+$c-fg0: #EEEDDE;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: $c-fg0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background: $c-bg0;
+}
+html {
+  font-size: .625rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+

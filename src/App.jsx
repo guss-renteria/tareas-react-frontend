@@ -1,5 +1,8 @@
-import { Suspense, lazy } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { useDispatch } from 'react-redux';
+import { loadTasks } from './actions/task.actions';
 
 import Loading from './views/Loading/Loading';
 import NotFound from './views/NotFound/NotFound';
@@ -7,6 +10,12 @@ import NotFound from './views/NotFound/NotFound';
 const Home = lazy(()=>import('./views/Home/Home'));
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadTasks());
+  }, []);
+
   return (
     <BrowserRouter>
       <Suspense fallback={ <Loading /> }>

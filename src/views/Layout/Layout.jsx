@@ -13,13 +13,13 @@ const Layout = ({ children }) => {
 
     switch(location.pathname) {
       case '/':
-        linksControl('home')
+        linksControl('link-home');
         break;
       case '/tasks':
-        linksControl('tasks')
+        linksControl('link-tasks');
         break;
       case '/proyects':
-        linksControl('proyects')
+        linksControl('link-proyects');
         break;
       default:
         linksControl('404')
@@ -50,17 +50,17 @@ const Layout = ({ children }) => {
       <div className='layout-nav__responsive' onClick={ navHandler }></div>
       <nav className='layout-nav'>
         <div className='nav-links' ref={ link_container }>
-          <Link to='/' className='link home' onClick={ linkHandler }>
+          <Link to='/' className='link link-home' onClick={ linkHandler }>
             <span className='icon-home'></span>
             <p>inicio</p>
           </Link>
 
-          <Link to='/tasks' className='link tasks' onClick={ linkHandler }>
+          <Link to='/tasks' className='link link-tasks' onClick={ linkHandler }>
             <span className='icon-book'></span>
             <p>app tareas</p>
           </Link>
 
-          <Link to='/proyects' className='link proyects' onClick={ linkHandler }>
+          <Link to='/proyects' className='link link-proyects' onClick={ linkHandler }>
             <span className='icon-folder'></span>
             <p>mas proyectos</p>
           </Link>

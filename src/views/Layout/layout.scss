@@ -158,7 +158,7 @@ $padd-top__button-nav: 10rem;
     }
     & > section {
       & > div {
-        width: calc(100vw - 10rem);
+        padding-right: 10rem;
       }
     }
   }

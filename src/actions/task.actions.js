@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { taskSlice, load_tasks, add_task, upd_task, del_task } from '../reducers/task.reducer';
 
-const BASE_URL = 'http://localhost:9000';
+const BASE_URL = 'http://192.168.100.39:9000';
 
 const getTasks = async () => {
     try{

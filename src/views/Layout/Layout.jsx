@@ -13,9 +13,6 @@ const Layout = ({ children }) => {
 
     switch(location.pathname) {
       case '/':
-        linksControl('link-home');
-        break;
-      case '/tasks':
         linksControl('link-tasks');
         break;
       case '/proyects':
@@ -50,12 +47,7 @@ const Layout = ({ children }) => {
       <div className='layout-nav__responsive' onClick={ navHandler }></div>
       <nav className='layout-nav'>
         <div className='nav-links' ref={ link_container }>
-          <Link to='/' className='link link-home' onClick={ linkHandler }>
-            <span className='icon-home'></span>
-            <p>inicio</p>
-          </Link>
-
-          <Link to='/tasks' className='link link-tasks' onClick={ linkHandler }>
+          <Link to='/' className='link link-tasks' onClick={ linkHandler }>
             <span className='icon-book'></span>
             <p>app tareas</p>
           </Link>

@@ -8,7 +8,6 @@ import Loading from './views/Loading/Loading';
 import NotFound from './views/NotFound/NotFound';
 import Layout from './views/Layout/Layout';
 
-const Home = lazy(()=>import('./views/Home/Home'));
 const Tasks = lazy(()=>import('./views/Tasks/Tasks'));
 const Proyects = lazy(()=>import('./views/Proyects/Proyects'));
 
@@ -25,8 +24,7 @@ const App = () => {
       <Layout>
         <Suspense fallback={ <Loading /> }>
           <Routes>
-            <Route path='/' exact element={ <Home /> }/>
-            <Route path='/tasks' exact element={ <Tasks /> }/>
+            <Route path='/' exact element={ <Tasks /> }/>
             <Route path='/proyects' exact element={ <Proyects /> }/>
             {/* NOT FOUND 404 */}
             <Route path='*' element={ <NotFound /> }/>

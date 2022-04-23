@@ -1,0 +1,122 @@
+.task-content {
+  width: 80%;
+  overflow: hidden;
+  border-radius: .6rem;
+
+  background: #F0E9D2;
+
+  & > .task__header {
+    padding: 2rem;
+
+    background: #181D31;
+
+    & > h2 {
+      color: #F0E9D2;
+      font-size: 2rem;
+    }
+  }
+
+  & > form {
+    padding: 2rem;
+
+    & > .task-title,
+    & > .task-description,
+    & > .task-content,
+    & > .task-tags {
+      width: 100%;
+
+      & > label {
+        display: block;
+        margin-bottom: 1rem;
+        
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+
+      & > input[type='text'],
+      & > textarea {
+        resize: none;
+        margin-bottom: 2.5rem;
+        padding: .8rem 1rem;
+        width: 100%;
+
+        border: none;
+        font-size: 1.4rem;
+      }
+    }
+
+    & > .task-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & > input[type="submit"],
+      & > input[type="button"] {
+        padding: .8rem 2rem;
+
+        border: none;
+        border-radius: .6rem;
+        cursor: pointer;
+        transition: all .2s ease;
+        
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: .1rem;
+      }
+
+      & > input[type="submit"] {
+        background: #181D31;
+        color: #F0E9D2;
+        border: .2rem solid transparent;
+
+        &:hover {
+          background: transparent;
+          color: #181D31;
+
+          border: .2rem solid #181D31;
+        }
+      }
+
+      & > input[type=button] {
+        background: #F55353;
+        color: #F0E9D2;
+        border: .2rem solid transparent;
+
+        &:hover {
+          background: transparent;
+          color: #F55353;
+
+          border: .2rem solid #F55353;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+
+    & > .task__header {
+      & > h2 {
+        font-size: 2.4rem;
+      }
+    }
+
+    & > form {
+      padding: 4rem;
+
+      & > .task-title,
+      & > .task-description,
+      & > .task-content,
+      & > .task-tags {
+        & > label {
+          font-size: 2rem;
+        }
+
+        & > input[type='text'],
+        & > textarea {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

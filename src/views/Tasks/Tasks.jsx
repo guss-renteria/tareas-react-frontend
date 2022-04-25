@@ -129,6 +129,18 @@ const Tasks = () => {
           )}
         </div>
       </div>
+      <div className='task-info'>
+        <div className='icon-warning'></div>
+        <p>Esta app fue creada por guss-renteria con la libreria&nbsp;
+          de 'React', esta app puede controlar una 'REST API' creada con&nbsp;
+          'express' en el lenguage de javascript. Para tener un mejor control cada 10&nbsp;
+          tareas se reinicia la base de datos.
+        </p>
+        {/* eslint-disable-next-line */}
+        <a href='https://github.com/guss-renteria/tareas-nodejs-backend' target='_blank' rel='noreferrer noopener'>
+          código de la 'REST API'
+        </a>
+      </div>
     </div>
     <Footer />
     <TaskModal submit={ submit } reference={ modal_reference } mode={ modal_props.mode } task={modal_props.task} closeTaskModal={ closeTaskModal } />

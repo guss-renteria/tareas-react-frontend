@@ -8,6 +8,38 @@
   align-items: flex-start;
   align-content: flex-start;
 
+  & > .task-info {
+    width: 80%;
+    max-height: 30rem;
+    overflow: hidden;
+
+    margin-bottom: 6rem;
+    padding: 2rem;
+
+    background: #FFF89A;
+    border-radius: 1rem;
+    box-shadow: .2rem .2rem .5rem #00000020;
+
+    & > div {
+      margin-bottom: 1rem;
+
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    & > p {
+      font-size: 1.8rem;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > a {
+      font-size: 1.8rem;
+      line-height: 4rem;
+    }
+  }
+
   & > .task-box {
     width: 80%;
     margin-bottom: 6rem;

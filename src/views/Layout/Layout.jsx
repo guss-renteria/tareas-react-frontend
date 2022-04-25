@@ -6,10 +6,12 @@ import './layout.scss';
 const Layout = ({ children }) => {
   const layout_container = useRef(null);
   const link_container = useRef(null);
+  const section_ref = useRef(null);
 
   const location = useLocation();
 
   useEffect(() => {
+    section_ref.current.scrollTop = 0;
 
     switch(location.pathname) {
       case '/':
@@ -26,6 +28,7 @@ const Layout = ({ children }) => {
 
   const linksControl = (class_name) => {
     const links = link_container.current.children;
+
     for(let link of links) {
       if([...link.classList].includes(class_name))
         link.classList.add('active');
@@ -58,7 +61,7 @@ const Layout = ({ children }) => {
           </Link>
         </div>
       </nav>
-      <section>
+      <section ref={ section_ref }>
         { children }
       </section>
     </div>

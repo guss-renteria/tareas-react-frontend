@@ -5,6 +5,7 @@ import { addTask, delTask, updTask } from '../../actions/task.actions';
 import './tasks.scss';
 
 import TaskModal from '../../components/TaskModal';
+import Footer from '../../components/Footer/Footer';
 
 const Tasks = () => {
   const modal_reference = useRef(null);
@@ -99,7 +100,7 @@ const Tasks = () => {
         <div className='task-box__header'>
           <h1 className='title'>Tareas</h1>
           <p className='length'>{ tasks && tasks.length }</p>
-          <button className='add' onClick={ e => openTaskModal(e, 'add') }>+</button>
+          <button className='add' onClick={ e => openTaskModal(e, 'add') }> <span className='icon-plus-circle'></span></button>
         </div>
         <div className='task-box__container'>
           { tasks?.length > 0 ? tasks.map((task, key) => (
@@ -120,7 +121,7 @@ const Tasks = () => {
               </div>
               <div className='task-options'>
                 <button className='update-button' onClick={ e => openTaskModal(e, 'upd', task)}>Actualizar</button>
-                <button className='delete-button' onClick={ () => removeTask(task.id) }>Eliminar</button>
+                <button className='delete-button' onClick={ () => removeTask(task.id) }>Eliminar <span className='icon-times-circle'></span></button>
               </div>
             </div>
           )) : (
@@ -129,6 +130,7 @@ const Tasks = () => {
         </div>
       </div>
     </div>
+    <Footer />
     <TaskModal submit={ submit } reference={ modal_reference } mode={ modal_props.mode } task={modal_props.task} closeTaskModal={ closeTaskModal } />
     </>
   )

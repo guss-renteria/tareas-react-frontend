@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./icomoon.eot?phdktb');
-  src:  url('./icomoon.eot?phdktb#iefix') format('embedded-opentype'),
-    url('./icomoon.ttf?phdktb') format('truetype'),
-    url('./icomoon.woff?phdktb') format('woff'),
-    url('./icomoon.svg?phdktb#icomoon') format('svg');
+  src:  url('./icomoon.eot?gehngf');
+  src:  url('./icomoon.eot?gehngf#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf?gehngf') format('truetype'),
+    url('./icomoon.woff?gehngf') format('woff'),
+    url('./icomoon.svg?gehngf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-  content: "\f015";
-}
 .icon-book:before {
   content: "\f02d";
 }
+.icon-plus-circle:before {
+  content: "\f055";
+}
+.icon-times-circle:before {
+  content: "\f057";
+}
+.icon-check-circle:before {
+  content: "\f058";
+}
+.icon-chevron-down:before {
+  content: "\f078";
+}
 .icon-folder:before {
   content: "\f07b";
+}
+.icon-certificate:before {
+  content: "\f0a3";
+}
+.icon-flask:before {
+  content: "\f0c3";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-github-alt:before {
+  content: "\f113";
 }

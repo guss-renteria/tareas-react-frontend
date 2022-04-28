@@ -32,6 +32,9 @@ La compilación se minimiza y los nombres de archivo incluyen los hashes.\
 
 Consulte la sección [implementación](https://facebook.github.io/create-react-app/docs/deployment) para obtener más información.
 
+#### **[+] Screenshot**
+![app-tareas](./screenshots/app-tareas.png "app-tareas")
+
 #### **[+] Aprende más**
 Puede obtener más información en la [documentacion de Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 

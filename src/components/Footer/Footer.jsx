@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className='footer-more-links'>
         {/* eslint-disable-next-line */}
-        <a href='' target='_blank' rel='noreferrer noopener'>
+        <a href='https://github.com/guss-renteria/tareas-react-frontend' target='_blank' rel='noreferrer noopener'>
           <span className='icon-flask'></span>&nbsp;&nbsp;
           link del proyecto
         </a>

@@ -42,7 +42,7 @@ const Proyects = () => {
             <img src={ tasks_img } alt='tasks'/>
           </div>
           {/* eslint-disable-next-line */}
-          <a href='https://github.com/guss-renteria' target='_blank' rel='noreferrer noopener' className='card-code dark icon-github-alt'></a>
+          <a href='https://github.com/guss-renteria/tareas-react-frontend' target='_blank' rel='noreferrer noopener' className='card-code dark icon-github-alt'></a>
         </div>
         <div className='card'>
           <div className='card-title'><span className='icon-folder'></span>&nbsp;juego-de-la-vida.</div>

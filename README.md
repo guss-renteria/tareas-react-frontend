@@ -1,6 +1,14 @@
 # **API con React**
 
-Este proyecto se creo usando [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto se creo usando [Create React App](https://github.com/facebook/create-react-app).\
+Este proyecto hace uso de [Redux](https://redux.js.org/) para un mejor manejo de las tareas.
+
+#### **[+] Preview**
+>**App frontend**\
+[tareas-react-frontend](https://tareas-react-frontend.vercel.app/)
+
+>**backend**\
+[tareas-nodejs-backend](https://tareas-nodejs-backend.herokuapp.com/)
 
 #### **[+] Scripts disponibles**
 ```shell
